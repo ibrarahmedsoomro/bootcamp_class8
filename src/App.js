@@ -19,7 +19,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>My Repositaries</h1>
+      <h1>My All Github Repositaries</h1>
       <ul>
         {repos.map((repoObj, ind) => {
           return (<li key={ind}>{repoObj.name}</li>)
