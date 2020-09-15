@@ -3,9 +3,9 @@ import './App.css';
 
 function App() {
 
-  const [repos, setRepos] = useState([{}]);
+        const [repos, setRepos] = useState([{}]);
 
-  useEffect(() => {
+  useEffect =(() => {
 
     async function getRepos() {
       const response = await fetch("https://api.github.com/users/ibrarsoomro/repos")
@@ -21,7 +21,7 @@ function App() {
     <div className="App">
       <h1>My All Github Repositaries</h1>
       <ul>
-        {repos.map((repoObj, ind) => {
+        {repos.map((repoObj, ind) =>               {
           return (<li key={ind}>{repoObj.name}</li>)
         })}
       </ul>
